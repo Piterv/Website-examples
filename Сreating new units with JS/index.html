@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>FORME</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<style type="text/css">
+	html,body{
+		margin:0px;
+		padding: 0px;
+		font-size:16px; 
+	}
+	#meny{
+		width:352px;
+		height: 50px;
+		min-width:352px; 
+		margin: 0 auto;
+		border: 1px solid #559988 ;
+		overflow: hidden;
+		text-align: center;
+		border-radius: 0 0 5px 5px;
+		box-shadow: 0px 2px 3px 3px rgba(0,0,0,0.2);
+		background-color: rgba(44,114,127,0.6);
+	}
+	#meny>*{
+		display:inline-block;
+		line-height: 50px; 
+		vertical-align: middle;
+
+	}
+	.block{
+		background-color: #777;
+		position: absolute;
+	}
+	#container{
+		position: relative;
+	}
+	
+	input{
+		width:30px;
+		height: 20px;
+		border: 1px #887799 solid;
+	}
+	#button{
+		overflow: hidden;
+		width: 50px;
+		height: 30px;
+		font-size:14px; 
+		line-height: 10px;
+		text-align: center;
+		background-color:#887788;
+		border-radius: 6px;
+		border: 1px #999 solid;
+
+	}
+	</style>
+</head>
+<body>
+	<div id="meny">
+			<div id = "widthBlock">
+				<label>Width</label>
+				<input type="text" id="width">
+			</div>	
+
+			<div id = "heightBlock">
+				<label>Height</label>
+				<input type="text" id="height">
+			</div>	
+
+			<div id = "leftBlock">
+				<label>X</label>
+				<input type="text" id="left">
+			</div>	
+
+			<div id = "topBlock">
+				<label>Y</label>
+				<input type="text" id="top">
+			</div>	
+		
+		<button id="button" onclick="addNewBlock();">add</button>
+	</div>
+	<div id="container">
+	</div>
+	<script src="mainJS/main.js"></script>
+</body>
+</html>
